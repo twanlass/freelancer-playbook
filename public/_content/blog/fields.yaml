@@ -1,0 +1,11 @@
+display: Post
+type: date
+
+fields:
+  author:
+    type: users
+    display: Author
+    default: doug
+  _js_view:
+    type: hidden
+    default: blog

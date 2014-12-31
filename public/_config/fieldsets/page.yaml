@@ -1,0 +1,7 @@
+title: Page
+
+fields:
+  content:
+    type: markitup
+    image_dir: assets/img/
+    file_dir: assets/files/

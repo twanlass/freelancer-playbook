@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /*300, 400, 600*/
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5 {
+ color: #454545;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 600;
+}
+
+h1 {
+  font-size: 5.2rem;
+}
+
+b, strong {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400; /*300 & 400*/
+}
+
+main {
+  font-size: 2.2rem;
+  color: #5e5e5e;
+}
+
+a {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    color: #454545;
+    font-weight: 400;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;      
+    &:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.55);      
+    }
+}

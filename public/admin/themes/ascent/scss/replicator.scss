@@ -1,0 +1,54 @@
+.replicator-set {
+  @include border-radius(2px);
+  @include border-box;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+	border: 1px solid $borderColor;
+  padding: 10px 20px;
+	margin: 1em 0;
+	font-size: 1em;
+
+	&.ui-sortable-helper {
+		border-color: darken($borderColor, 10);
+  box-shadow: 0px 1px 20px rgba(0,0,0,.1);
+	}
+}
+
+.replicator-set-label {
+	font-weight: bold;
+	margin: -10px -20px 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid $borderColor;
+	background: lighten($lightTan, 5);
+	text-shadow: 0 1px 0 white;
+}
+
+.replicator-set-buttons {
+	float: right;
+	margin-right: -10px;
+
+	.ss-icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin: -1px 0 0 5px;
+		color: darken($lightTan, 20);
+		cursor: pointer;
+
+		.replicator-set:hover & {
+			color: darken($lightTan, 30);
+
+			&:hover {
+				color: $linkHoverColor;
+			}
+		}
+		
+	}
+
+}
+
+.replicator-buttons {	
+	button {
+		font-size: 14px;
+		margin: 0;
+	}
+}

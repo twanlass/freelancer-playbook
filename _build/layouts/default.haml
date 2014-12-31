@@ -1,0 +1,38 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(charset="UTF-8")
+    %title
+      {{ title|ucfirst }}
+
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" }
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+    {{ if is_dev }}
+      %script(src="http://localhost:35729/livereload.js")
+    {{ /if }}
+
+    {{ theme:css src="main" tag="true" }}
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+    %link(rel="shortcut icon" type="image/png" href="{{ theme:img src='favicon.png' }}")
+    %link(rel="apple-itouch-icon" type="image/png" href="{{ theme:img src='favicon.png' }}")
+  %body
+    %main
+      {{ theme:partial src="header" }}
+      {{ layout_content }}
+      {{ theme:partial src="footer" }}
+
+    {{ theme:js src="base" tag="true" }}
+    {{ theme:js src="vendor" tag="true" }}
+
+    %script( type="text/javascript" )
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-48350250-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

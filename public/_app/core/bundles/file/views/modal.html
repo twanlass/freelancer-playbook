@@ -1,0 +1,21 @@
+<div class="existing-file-selector">
+	<div class="modal">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h3>{{ localization fetch="choose_file_from" }} /{{ destination }}</h3>
+		</div>
+		<div class="modal-body">
+			<table>
+				{{ server_files }}
+					<tr data-filename="{{ value }}">
+						<td class="filename"><a href="{{ value }}" target="_blank" title="{{ value }}">{{ display_name }}</a></td>
+						<td class="action">
+							<a href="{{ value }}" target="_blank" class="view"><span class="ss-icon">&#x1F50E;</span></a>
+							<a href="#" class="select"><span class="ss-icon">&#xEC08;</span></a>
+						</td>
+					</tr>
+				{{ /server_files }}
+			</table>
+		</div>
+	</div>
+</div>

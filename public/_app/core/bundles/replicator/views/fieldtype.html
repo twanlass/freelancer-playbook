@@ -1,0 +1,31 @@
+<div class="replicator-set-holder" id="{{ field_id }}">
+	{{ if sets }}
+		{{ sets }}
+			<div class="replicator-set set-{{ name }}">
+				<div class="replicator-set-buttons">
+					<span class="ss-icon replicator-set-delete" data-confirm-message="{{ Localization fetch='are_you_sure' }}">delete</span>
+					<span class="ss-icon replicator-set-move">move</span>
+				</div>
+				<div class="replicator-set-label">{{ display }}</div>
+				{{ fieldtypes }}
+					<div class="input-block input-{{ type }}">
+						<input type="hidden" name="page{{ field_name }}[type]" value="{{ name }}" />
+						{{ fieldtype }}
+					</div>
+				{{ /fieldtypes }}
+			</div>
+		{{ /sets }}
+	{{ /if }}
+</div>
+
+<p class="replicator-buttons">
+	{{ set_types }}
+		<button data-set="{{ name }}" class="btn"><span class="ss-icon">plus</span>{{ display }}</button>
+	{{ /set_types }}
+</p>
+
+<script>
+	$('#{{ field_id }}').replicator({
+		templates: {{ set_templates }}
+	});
+</script>

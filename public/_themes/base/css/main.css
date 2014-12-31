@@ -1,0 +1,114 @@
+/* line 5, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+html, button, input, select, textarea {
+  color: #454545; }
+
+/* line 9, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+html {
+  height: 100%;
+  width: 100%; }
+
+/* line 19, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative; }
+
+/* line 27, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 32, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 37, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 46, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  border: 1px solid #ccc; }
+
+/* line 52, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 58, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+textarea {
+  resize: vertical; }
+
+/* line 62, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/reset */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  padding: 0.2em 0; }
+
+/* line 1, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+html {
+  font-size: 62.5%; }
+
+/* line 5, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  /*300, 400, 600*/
+  line-height: 1.4; }
+
+/* line 12, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+h1, h2, h3, h4, h5 {
+  color: #454545;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+
+/* line 18, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+h1 {
+  font-size: 5.2rem; }
+
+/* line 22, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+b, strong {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  /*300 & 400*/ }
+
+/* line 27, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+main {
+  font-size: 2.2rem;
+  color: #5e5e5e; }
+
+/* line 32, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  color: #454545;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  /* line 42, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/modules/typography */
+  a:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.55); }
+
+/* line 1, /Users/Tyler/Dropbox/Repos/freelancer-playbook/_build/css/views/base */
+main {
+  margin: 0 auto;
+  width: 700px; }

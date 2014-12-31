@@ -1,0 +1,33 @@
+box: wercker/nodejs
+build:
+  steps:
+    # Install dependencies
+    - npm-install
+
+    # Install gulp
+    - script:
+        name: install gulp
+        code: sudo npm install -g gulp
+
+    # Build theme assets for deployment
+    - script:
+        name: generate theme
+        code: gulp build --production
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: freelancerplaybook.com
+    - williamli/add-deploy-ssh-key:
+        keyname: DO_KEY
+    - script:
+        name: transfer application
+        code: |
+          pwd
+          ls -la
+          rsync -raz --progress public/. freelancerplaybook.com:/var/www/$PROJECT_NAME
+    - script:
+        name: delete cache folder
+        code: ssh freelancerplaybook.com sudo rm -rf /var/www/$PROJECT_NAME/public/_cache/_app
+    - script:
+        name: set permissions
+        code: ssh root@freelancerplaybook.com sudo chown -R www-data:www-data /var/www/$PROJECT_NAME
