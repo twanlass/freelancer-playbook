@@ -24,7 +24,7 @@ deploy:
         code: |
           pwd
           ls -la
-          rsync -raz --progress public/. freelancerplaybook.com:/var/www/html
+          rsync -raz --progress public/. root@freelancerplaybook.com:/var/www/html
     - script:
         name: delete cache folder
         code: ssh root@freelancerplaybook.com sudo rm -rf /var/www/html/public/_cache/_app
