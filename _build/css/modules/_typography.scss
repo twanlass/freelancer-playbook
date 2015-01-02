@@ -5,34 +5,62 @@ html {
 body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; /*300, 400, 600*/
-  line-height: 1.4;
+  font-weight: $font-weight-normal;
+  line-height: 3.4rem;
 }
 
 h1, h2, h3, h4, h5 {
  color: #454545;
  font-family: 'Open Sans', sans-serif;
- font-weight: 600;
+ font-weight: $font-weight-bold;
 }
 
 h1 {
   font-size: 5.2rem;
+  line-height: 5.2rem;
+  margin-top: 0;
+
+  @media (max-width: 699px) {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+
+h2 {
+  line-height: 4rem;
+  margin-top: 0;
+
+  @media (max-width: 699px) {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
 }
 
 b, strong {
   font-family: 'Roboto Slab', serif;
-  font-weight: 400; /*300 & 400*/
+  font-weight: $font-weight-medium;
+  color: $dark;
 }
 
 main {
   font-size: 2.2rem;
   color: #5e5e5e;
+  
+  @media (max-width: 699px) {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }    
 }
 
 a {
     border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-    color: #454545;
-    font-weight: 400;
+    color: $dark;
+    font-weight: $font-weight-medium;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -40,6 +68,6 @@ a {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;      
     &:hover {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.55);      
+      border-color: rgba(0, 0, 0, 0.35);
     }
 }

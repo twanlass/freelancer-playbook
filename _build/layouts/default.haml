@@ -18,10 +18,10 @@
     %link(rel="shortcut icon" type="image/png" href="{{ theme:img src='favicon.png' }}")
     %link(rel="apple-itouch-icon" type="image/png" href="{{ theme:img src='favicon.png' }}")
   %body
+    {{ theme:partial src="header" }}
     %main
-      {{ theme:partial src="header" }}
       {{ layout_content }}
-      {{ theme:partial src="footer" }}
+    {{ theme:partial src="footer" }}
 
     {{ theme:js src="base" tag="true" }}
     {{ theme:js src="vendor" tag="true" }}

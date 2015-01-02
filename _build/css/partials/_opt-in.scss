@@ -1,0 +1,33 @@
+.opt-in {
+  background-color: #f9f9f9;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 23px;
+  text-align: center;
+  margin: 80px 0;
+  padding: 20px 0 30px;
+  border-radius: 3px;
+
+  @media (max-width: 699px) {
+    margin: 30px 0;
+    padding: 20px;
+  }
+
+  h2 {
+    margin: 0;
+
+    @media (max-width: 699px) {
+      margin-bottom: 10px;
+      display: block;
+    }
+    
+  }
+  strong {
+    margin-bottom: 8px;
+    display: block;
+    
+    @media (max-width: 699px) {
+      margin-bottom: 10px;
+    }
+  }
+}

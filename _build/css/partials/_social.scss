@@ -1,0 +1,25 @@
+.social {
+  a {
+    border: 2px solid rgba(0,0,0,0.15);
+    font-size: 1.4rem;
+    font-weight: $font-weight-bold;
+    color: $dark;
+    padding: 10px 18px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  .facebook:hover {
+    color: #4872c9;
+    border-color: #4872c9;
+  }
+
+  .twitter:hover {
+    color: #1f98e4;
+    border-color: #1f98e4;
+  }
+
+  .gplus:hover {
+    color: #de4242;
+    border-color: #de4242;
+  }
+}

@@ -1,0 +1,53 @@
+header {
+  @extend .clearfix;
+  margin: 0 0 60px;
+  padding: 20px 30px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 699px) {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    float: left;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    margin: 0;
+    a {
+      color: $primary;
+      border-bottom: 0;
+      &:hover {
+        border-bottom: 0;
+      }
+    }
+  }
+  ul {
+    @extend .clearfix;
+    display: inline-block;
+    float: right;    
+    list-style: none;
+    margin: 6px 0 8px;
+    
+    @media (max-width: 699px) {
+      margin: 22px 0 0;
+      float: left;
+    }
+  }
+  li {
+    float: left;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin: 0 20px 0 0;
+    text-transform: capitalize;
+    &:before {
+      content: ""
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-weight: $font-weight-bold;      
+    }
+  }
+}

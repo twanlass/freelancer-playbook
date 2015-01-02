@@ -1,0 +1,15 @@
+footer {
+  font-size: 1.6rem;
+  font-weight: $font-weight-bold;
+  margin: 100px 0 50px;
+  text-align: center;
+
+  @media (max-width: 699px) {
+    margin: 0;
+    padding: 15px;
+  }
+
+  a {
+    font-weight: $font-weight-bold;
+  }
+}

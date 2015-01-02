@@ -1,4 +1,9 @@
 main {
   margin: 0 auto;
   width: 700px;
+  
+  @media (max-width: 699px) {
+    width: 100%;
+    padding: 0 20px;
+  }  
 }

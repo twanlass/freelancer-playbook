@@ -2,10 +2,10 @@ display: Post
 type: date
 
 fields:
+  play:
+    type: text
+    display: Play Number
   author:
     type: users
     display: Author
-    default: doug
-  _js_view:
-    type: hidden
-    default: blog
+    default: tyler

@@ -1,0 +1,41 @@
+ol, ul {
+  margin: 24px;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+blockquote {
+  border-bottom: 2px solid $light;
+  border-top: 2px solid $light;
+  margin: 60px 0;
+  padding: 60px 0;
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+article {
+  margin-bottom: 100px;
+  position: relative;
+
+  @media (max-width: 699px) {
+    margin-bottom: 40px;
+  }
+}
+
+h2 a {
+  font-weight: $font-weight-bold;
+}
+
+#disqus_thread {
+  margin-bottom: 60px;
+  
+  @media (max-width: 699px) {
+    margin: 0;
+  }
+}

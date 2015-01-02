@@ -1,7 +1,7 @@
 ---
 title: Freelancer Playbook
 ---
-## Consistently finding new freelance gigs is a struggles – _and that's just for mediocre clients with meh budgets._
+## Consistently finding new freelance gigs is a struggle – _and that's just for mediocre clients with meh budgets._
 
 And as soon as we've completed the project, well, we're back at square one, right? Hunting for work, trying to make a decent wage and finding clients that respect us.
 
