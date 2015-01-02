@@ -27,7 +27,7 @@ deploy:
           rsync -raz --progress public/. freelancerplaybook.com:/var/www/html
     - script:
         name: delete cache folder
-        code: ssh freelancerplaybook.com sudo rm -rf /var/www/html/public/_cache/_app
+        code: ssh root@freelancerplaybook.com sudo rm -rf /var/www/html/public/_cache/_app
     - script:
         name: set permissions
         code: ssh root@freelancerplaybook.com sudo chown -R www-data:www-data /var/www/html
