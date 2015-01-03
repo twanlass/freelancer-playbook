@@ -1,5 +1,5 @@
 !!! 5
-%html(lang="en")
+%html(lang="en" itemscope itemtype="http://schema.org/Article")
   %head
     %meta(charset="UTF-8")
     %title
@@ -8,6 +8,27 @@
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" }
     %meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
+    %meta{ name: "description", content: "Be a better freelance web designer or developer." }
+
+    %meta{ property: "twitter:card", content: "summary" }
+    %meta{ property: "twitter:site", content: "@twanlass" }
+    %meta{ property: "twitter:title", content: "{{ title|ucfirst }}" }
+    %meta{ property: "twitter:description", content: "{{ meta_description }}" }
+    %meta{ property: "twitter:image", content: "{{ _site_url }}{{ theme:img src='favicon.png' }}" }
+    %meta{ property: "twitter:url", content: "{{ _site_url }}{{ current_url }}" }
+
+    %meta{ property: "og:title", content: "{{ title|ucfirst }}" }
+    %meta{ property: "og:url", content: "{{ _site_url }}{{ current_url }}" }
+    %meta{ property: "og:type", content: "article" } 
+    %meta{ property: "og:image", content: "{{ _site_url }}{{ theme:img src='favicon.png' }}" }
+    %meta{ property: "og:description", content: "Be a better freelance web designer or developer." }
+    %meta{ property: "og:site_name", content: "Freelancer Playbook" }
+    %meta{ property:  "fb:page_id", content: "1561585910751657" }
+
+    %meta{ itemprop: "name", content: "{{ title|ucfirst }}" }    
+    %meta{ itemprop: "description", content: "{{  }}" }    
+    %meta{ itemprop: "image", content: "{{ _site_url }}{{ theme:img src='favicon.png' }}" }    
+ 
     {{ if is_dev }}
       %script(src="http://localhost:35729/livereload.js")
     {{ /if }}

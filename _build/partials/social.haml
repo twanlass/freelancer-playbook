@@ -1,4 +1,4 @@
 .social
-  %a( class="facebook" href="https://facebook.com/sharer.php?u={{ permalink|urlencode }}" ) Share
-  %a( class="twitter" href="https://twitter.com/intent/tweet?url={{ permalink|urlencode }}&text={{ title|urlencode }}" ) Tweet
-  %a( class="gplus" href="https://plus.google.com/share?url={{ permalink|urlencode }}" ) Post
+  %a( class="facebook" target="_blank" href="https://facebook.com/sharer.php?u={{ permalink|urlencode }}" ) Share
+  %a( class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ permalink|urlencode }}&text={{ title|ucfirst|urlencode }}" ) Tweet
+  %a( class="gplus" target="_blank" href="https://plus.google.com/share?url={{ permalink|urlencode }}" ) Post
