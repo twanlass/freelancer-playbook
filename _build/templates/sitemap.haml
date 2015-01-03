@@ -1,11 +1,3 @@
-{{ get_content from="/" }}
-%url
-  %loc {{ _site_url }}
-  %lastmod {{ last_modified format="Y-m-d" }}
-  %changefreq monthly
-  %priority 1
-{{ /get_content }}
-
 {{ entries:listing folder="blog" }}
 %url
   %loc {{ _site_url }}{{ url }}
