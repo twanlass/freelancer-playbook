@@ -20,6 +20,11 @@ routes:
     # layout: system
 
   / : blog-index
+  /sitemap:
+    template: sitemap
+    layout: sitemap
+    _type: xml
 
 ignore:
   # - success
+

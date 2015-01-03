@@ -1,0 +1,19 @@
+{{ get_content from="/" }}
+%url
+  %loc {{ _site_url }}
+  %lastmod {{ last_modified format="Y-m-d" }}
+  %changefreq monthly
+  %priority 1
+{{ /get_content }}
+
+{{ entries:listing folder="blog" }}
+%url
+  %loc {{ _site_url }}{{ url }}
+  %lastmod {{ datestamp format="Y-m-d" }}
+  %changefreq monthly
+  {{ if sitemap_priority != '' }}
+  %priority {{ sitemap_priority }}
+  {{ else }}
+  %priority 0.7
+  {{ endif }}
+{{ /entries:listing }}
