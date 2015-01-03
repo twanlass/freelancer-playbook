@@ -5,3 +5,5 @@ node_modules
 public/_cache/*/**
 public/_content/**
 public/_themes/base
+public/_content/**
+!public/_content/feed.md

@@ -44,8 +44,16 @@
     {{ layout_content }}
     {{ theme:partial src="footer" }}
 
-    {{ theme:js src="base" tag="true" }}
-    {{ theme:js src="vendor" tag="true" }}
+    %script( type="text/javascript" src="{{ theme:js src='vendor' }}" data-no-instant)
+    %script( type="text/javascript" data-no-instant)
+      InstantClick.init();    
+
+    %script( type="text/javascript" data-no-instant)  
+      if ('addEventListener' in document) {
+          document.addEventListener('DOMContentLoaded', function() {
+              FastClick.attach(document.body);
+          }, false);
+      }
 
     %script( type="text/javascript" )
       var _gaq = _gaq || [];
