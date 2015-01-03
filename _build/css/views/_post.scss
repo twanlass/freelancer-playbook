@@ -1,41 +1,63 @@
-ol, ul {
-  margin: 24px;
-}
+.post, .post-preview {
+  ol, ul {
+    margin: 24px;
+  }
 
-li {
-  margin-bottom: 16px;
-}
+  li {
+    margin-bottom: 16px;
+  }
 
-blockquote {
-  border-bottom: 2px solid $light;
-  border-top: 2px solid $light;
-  margin: 60px 0;
-  padding: 60px 0;
-  text-align: center;
-  p {
-    margin: 0;
-    padding: 0;
+  blockquote {
+    border-bottom: 2px solid $light;
+    border-top: 2px solid $light;
+    margin: 60px 0;
+    padding: 60px 0;
     text-align: center;
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
   }
-}
 
-article {
-  margin-bottom: 100px;
-  position: relative;
+  article {
+    margin-bottom: 100px;
+    position: relative;
 
-  @media (max-width: 699px) {
-    margin-bottom: 40px;
+    @media (max-width: 699px) {
+      margin-bottom: 40px;
+    }
   }
-}
 
-h2 a {
-  font-weight: $font-weight-bold;
-}
+  h2, h2 a {
+    font-weight: $font-weight-bold;
+    text-transform: capitalize;
+    margin: 50px 0 0;
+  }
 
-#disqus_thread {
-  margin-bottom: 60px;
-  
-  @media (max-width: 699px) {
+  .title, .title a {
+    border: 0;
+    font-weight: $font-weight-bold;
+    line-height: 6.2rem;
     margin: 0;
+    text-transform: capitalize;
   }
+
+  #disqus_thread {
+    margin-bottom: 60px;
+    
+    @media (max-width: 699px) {
+      margin: 0;
+    }
+  }
+}
+
+.post {
+
+}
+
+.post-preview {
+    border-bottom: 2px solid $light;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
 }

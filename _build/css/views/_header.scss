@@ -2,7 +2,7 @@ header {
   @extend .clearfix;
   margin: 0 0 60px;
   padding: 20px 30px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
 
   @media (max-width: 699px) {
     margin-bottom: 20px;
@@ -14,9 +14,15 @@ header {
     line-height: 2.5rem;
     display: inline-block;
     margin: 0;
+
     a {
-      color: $primary;
       border-bottom: 0;
+
+      @media (max-width: 699px) {
+        text-align: center;
+        display: block;
+      }
+          
       &:hover {
         border-bottom: 0;
       }

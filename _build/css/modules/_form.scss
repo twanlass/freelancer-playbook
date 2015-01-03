@@ -22,7 +22,8 @@ input[type="text"], input[type="email"] {
   }
 }
 
-input[type="submit"] {
+input[type="submit"], .btn {
+  background-image: none;
   font-size: 1.6rem;
   padding: 2px;
   font-family: 'Roboto Slab', serif;
@@ -32,6 +33,7 @@ input[type="submit"] {
   color: #fff;
   cursor: pointer;
   margin-left: 6px;
+  text-transform: capitalize;
 
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -49,5 +51,6 @@ input[type="submit"] {
     margin-bottom: 10px;
     margin-left: 0;
     width: 100%;
+    text-align: center;
   }  
 }

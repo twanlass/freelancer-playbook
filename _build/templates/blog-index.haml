@@ -1,22 +1,24 @@
 %main
   {{ theme:partial src="opt-in" }}
-  .post
-    {{ entries:listing folder="blog" sort_by="date" sort_dir="desc" limit="10" paginate="true" }}
-      %article
-        {{ theme:partial src="play" use_context="true" }}
-        %h2 
-          %a( href="{{ url }}" )
-            {{ title|widont }}
+  {{ entries:listing folder="blog" sort_by="date" sort_dir="desc" limit="10" paginate="true" }}
+    %article.post-preview
+      {{ theme:partial src="play" use_context="true" }}
+      %h1.title
+        %a( href="{{ url }}" )
+          {{ title|widont }}
+      .excerpt
         {{ content|excerpt }}
-    {{ /entries:listing }}
-    {{ entries:pagination folder="blog" sort_by="date" sort_dir="desc" limit="10" paginate="true" }}
-      {{ if previous_page or next_page }}
-      .pagination
-        {{ if previous_page }}
-          %a( href="{{ previous_page }}" class="pull-left" ) &larr; Previous Page
-        {{ endif }}
-        {{ if next_page }}
-          %a( href="{{ next_page }}" class="pull-right" ) Next Page &rarr;
-        {{ endif }}
+      %a.btn( href="{{ url }}" )
+        Read this play &rarr;
+  {{ /entries:listing }}
+  {{ entries:pagination folder="blog" sort_by="date" sort_dir="desc" limit="10" paginate="true" }}
+    {{ if previous_page or next_page }}
+    .pagination
+      {{ if previous_page }}
+        %a( href="{{ previous_page }}" class="pull-left" ) &larr; Previous Page
       {{ endif }}
-    {{ /entries:pagination }}
+      {{ if next_page }}
+        %a( href="{{ next_page }}" class="pull-right" ) Next Page &rarr;
+      {{ endif }}
+    {{ endif }}
+  {{ /entries:pagination }}

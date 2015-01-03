@@ -1,6 +1,11 @@
-{{ theme:partial src="play" }}
-%h1 {{ title|widont }}
-{{ theme:partial src="social" }}
-{{ content|all }}
-{{ theme:partial src="opt-in" }}
-{{ theme:partial src="comments" }}
+%main
+  %article.post
+    {{ theme:partial src="play" }}
+    %h1.title
+      {{ title|widont }}
+    {{ theme:partial src="social" }}
+    {{ content|all }}
+  {{ theme:partial src="opt-in" }}
+.comments  
+  %main
+    {{ theme:partial src="comments" }}

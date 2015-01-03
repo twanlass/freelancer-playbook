@@ -1,8 +1,9 @@
 footer {
   font-size: 1.6rem;
   font-weight: $font-weight-bold;
-  margin: 100px 0 50px;
+  padding: 50px 0;
   text-align: center;
+  background-color: #f9f9f9;
 
   @media (max-width: 699px) {
     margin: 0;
