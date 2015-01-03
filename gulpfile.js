@@ -126,6 +126,13 @@ gulp.task('copy-config', function() {
   .pipe(gulp.dest(DEST + '/'));
 });
 
+
+// Copy html files
+gulp.task('copy-html', function() {
+  gulp.src('_build/*/**.html', { cwd: './' })
+  .pipe(gulp.dest(DEST + '/'));
+});
+
 ////////////////////////////////////////
 // Clean Output Directories
 ////////////////////////////////////////
@@ -169,6 +176,9 @@ gulp.task('watch', function() {
   // Watch config files
   gulp.watch(['_build/*.yaml'], ['copy-config']);
 
+  // Watch HTML files
+  gulp.watch(['_build/*/**.html'], ['copy-html']);
+
 });
 //
 
@@ -178,13 +188,13 @@ gulp.task('watch', function() {
 
 // Default development task (live reload, etc)
 gulp.task('default', ['connect','clean', 'watch'], function() {
-    gulp.start('styles', 'coffeescripts', 'javascripts', 'hamls', 'copy-images', 'copy-fonts', 'copy-config');
+    gulp.start('styles', 'coffeescripts', 'javascripts', 'hamls', 'copy-images', 'copy-fonts', 'copy-config', 'copy-html');
 });
 
 
 // Build development task - $ gulp build
 gulp.task('build', ['clean'], function() {
-    gulp.start('styles', 'coffeescripts', 'javascripts', 'hamls', 'copy-images', 'copy-fonts', 'copy-config');
+    gulp.start('styles', 'coffeescripts', 'javascripts', 'hamls', 'copy-images', 'copy-fonts', 'copy-config', 'copy-html');
 });
 
 
