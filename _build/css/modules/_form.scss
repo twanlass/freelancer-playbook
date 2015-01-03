@@ -5,6 +5,9 @@ input[type="text"], input[type="email"] {
   padding: 6px 10px;
   border: 2px solid $light;
 
+  -webkit-appearance: none;
+  border-radius: 3px;  
+
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -34,6 +37,9 @@ input[type="submit"], .btn {
   cursor: pointer;
   margin-left: 6px;
   text-transform: capitalize;
+
+  -webkit-appearance: none;
+  border-radius: 3px;  
 
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;

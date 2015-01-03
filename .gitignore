@@ -2,4 +2,6 @@ node_modules
 .sass_cache
 .DS_Store
 
-public/_cache/*
+public/_cache/*/**
+public/_content/**
+public/_themes/base

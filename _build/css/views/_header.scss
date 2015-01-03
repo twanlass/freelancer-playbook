@@ -17,12 +17,13 @@ header {
 
     a {
       border-bottom: 0;
+      font-weight: $font-weight-bold;
 
       @media (max-width: 699px) {
         text-align: center;
         display: block;
       }
-          
+
       &:hover {
         border-bottom: 0;
       }
