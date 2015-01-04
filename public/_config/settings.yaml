@@ -21,7 +21,7 @@ _language: en
 _site_root: /
 
 # Name of your site
-_site_name: Another Awesome Statamic Site
+_site_name: 
 
 # Change the folder name for your content directory
 _content_root: _content
@@ -97,7 +97,7 @@ _parse_order:
 _fix_out_of_range_pagination: true
 
 # Experimental: Set http/browser cache length. Plain English is perfect. 1 hour, 1 day, 1 week, etc
-_http_cache_expires: false
+_http_cache_expires: 1 week
 
 _enable_static_pipeline: false
 
