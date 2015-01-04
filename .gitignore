@@ -3,5 +3,6 @@ node_modules
 .DS_Store
 
 public/_cache/*/**
+public/_content/*/**
 public/_themes/base
 !public/_content/feed.md
