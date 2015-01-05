@@ -10,14 +10,14 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
- color: #454545;
+ color: $black;
  font-family: 'Raleway', sans-serif;
  font-weight: $font-weight-bold;
 }
 
 h1 {
-  font-size: 5.2rem;
-  line-height: 5.2rem;
+  font-size: 4.2rem;
+  line-height: 4.2rem;
 
   @media (max-width: 699px) {
     font-size: 3.2rem;
@@ -36,13 +36,13 @@ h2 {
 
 p {
   font-family: 'Roboto Slab', serif;
-  text-align: justify;
+  text-align: left;
 }
 
 b, strong {
   font-family: 'Roboto Slab', serif;
   font-weight: $font-weight-medium;
-  color: $dark;
+  color: $black;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
 
 a {
     border-bottom: 2px solid $primary;
-    color: $dark;
+    color: $black;
     font-weight: $font-weight-medium;
     text-decoration: none;
     -webkit-transition: all 0.2s ease;
