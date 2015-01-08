@@ -70,7 +70,7 @@ _content_type: markdown
 _enable_smartypants: true
 
 # set to 'true' to enable theme caching busting based on last modified timestamps
-_theme_cache_bust: false
+_theme_cache_bust: true
 
 # Specify where to save transformed images
 _transform_destination: assets/img/resized
@@ -97,7 +97,7 @@ _parse_order:
 _fix_out_of_range_pagination: true
 
 # Experimental: Set http/browser cache length. Plain English is perfect. 1 hour, 1 day, 1 week, etc
-_http_cache_expires: 1 week
+_http_cache_expires: 5 days
 
 _enable_static_pipeline: false
 
