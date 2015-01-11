@@ -6,4 +6,4 @@ public/_cache/*/**
 public/_content/*/**
 public/_themes/base
 !public/_content/feed.md
-public/config/users/*.yaml
+public/_config/users/*.yaml
